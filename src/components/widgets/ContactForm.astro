@@ -1,0 +1,60 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+---
+
+<WidgetWrapper id="contact" containerClass="max-w-5xl mx-auto">
+  <Headline
+    title="Get in Touch"
+    subtitle="Have a project in mind or want to explore how NotBad Labs can help? Drop us a line."
+  />
+
+  <div class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full">
+    <form action="https://formspree.io/f/replace_with_your_formspree_id" method="POST" class="space-y-6">
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-900 dark:text-gray-300">
+          Email address
+        </label>
+        <div class="mt-2">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            placeholder="you@company.com"
+            required
+            class="block w-full rounded-md border-0 py-2 px-3 text-gray-900 dark:text-white dark:bg-slate-800 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-accent sm:text-sm sm:leading-6"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-900 dark:text-gray-300">
+          Message
+        </label>
+        <div class="mt-2">
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="How can we help?"
+            required
+            class="block w-full rounded-md border-0 py-2 px-3 text-gray-900 dark:text-white dark:bg-slate-800 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-accent sm:text-sm sm:leading-6"
+          ></textarea>
+        </div>
+      </div>
+
+      <div>
+        <button
+          type="submit"
+          class="w-full flex justify-center rounded-md bg-accent px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-accent/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          Send Message
+        </button>
+      </div>
+      <p class="text-xs text-center text-gray-500 dark:text-gray-400 mt-4">
+        We respect your privacy. No automated tracking.
+      </p>
+    </form>
+  </div>
+</WidgetWrapper>

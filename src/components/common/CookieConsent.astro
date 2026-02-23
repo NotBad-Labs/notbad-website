@@ -1,0 +1,68 @@
+---
+---
+
+<div id="cookie-consent-banner" class="fixed bottom-0 inset-x-0 pb-2 sm:pb-5 z-50 hidden">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="p-2 rounded-lg bg-slate-900 border border-slate-700 shadow-lg sm:p-3">
+      <div class="flex items-center justify-between flex-wrap">
+        <div class="w-0 flex-1 flex items-center">
+          <span class="flex p-2 rounded-lg bg-slate-800">
+            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+          </span>
+          <p class="ml-3 font-medium text-white truncate">
+            <span class="md:hidden">We use cookies for analytics.</span>
+            <span class="hidden md:inline">We respect your privacy. We strictly use cookies to count visits, but only if you opt-in.</span>
+          </p>
+        </div>
+        <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto flex space-x-2">
+          <button id="cookie-accept" class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-slate-900 bg-white hover:bg-slate-50">
+            Accept
+          </button>
+          <button id="cookie-decline" class="flex items-center justify-center px-4 py-2 border border-slate-700 rounded-md shadow-sm text-sm font-medium text-white bg-slate-800 hover:bg-slate-700">
+            Decline
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const consentBanner = document.getElementById('cookie-consent-banner');
+  const btnAccept = document.getElementById('cookie-accept');
+  const btnDecline = document.getElementById('cookie-decline');
+  const CONSENT_KEY = 'notbad_analytics_consent';
+
+  function initAnalytics() {
+    // Inject PostHog Analytics only on explicit consent
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_replace_with_your_posthog_id', { api_host: 'https://app.posthog.com' })
+  }
+
+  function checkConsent() {
+    const consent = localStorage.getItem(CONSENT_KEY);
+    if (consent === 'granted') {
+      initAnalytics();
+    } else if (!consent) {
+      if (consentBanner) consentBanner.classList.remove('hidden');
+    }
+  }
+
+  if (btnAccept && btnDecline && consentBanner) {
+    btnAccept.addEventListener('click', () => {
+      localStorage.setItem(CONSENT_KEY, 'granted');
+      consentBanner.classList.add('hidden');
+      initAnalytics();
+    });
+
+    btnDecline.addEventListener('click', () => {
+      localStorage.setItem(CONSENT_KEY, 'denied');
+      consentBanner.classList.add('hidden');
+    });
+  }
+
+  // Check consent on load
+  document.addEventListener('DOMContentLoaded', checkConsent);
+</script>

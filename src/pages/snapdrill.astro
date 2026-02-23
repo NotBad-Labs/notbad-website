@@ -1,0 +1,102 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+
+const metadata = {
+  title: 'SnapDrill | AI Study Companion',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="SnapDrill iOS"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Join Waitlist',
+        href: '#waitlist',
+        icon: 'tabler:brand-apple',
+      },
+      { text: 'Learn More', href: '#features' },
+    ]}
+    image={{ src: '~/assets/images/snapdrill_concept.png', alt: 'SnapDrill App Interface on iPhone' }}
+  >
+    <Fragment slot="title">
+      Snap your mistakes. <br />
+      <span class="text-accent dark:text-white highlight">Drill them right.</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="font-semibold">Your ultimate AI study companion.</span> 
+      Snap a photo of any wrong answer. Our on-device AI extracts the text, categorizes the mistake, and uses scientifically-proven spaced repetition to ensure you never make the same mistake twice.
+    </Fragment>
+  </Hero>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    tagline="Features"
+    title="Why SnapDrill?"
+    subtitle="Built around the core philosophy of 'Local-First' processing. Lightning fast, mathematically rigorous, and entirely private."
+    items={[
+      {
+        title: 'On-Device OCR',
+        description:
+          'Utilizing the Apple Vision framework, text extraction happens instantly on your device. No cloud processing, no waiting, no internet required.',
+        icon: 'tabler:scan',
+      },
+      {
+        title: 'Spaced Repetition Engine',
+        description:
+          'Our core algorithm is based on the Ebbinghaus forgetting curve. It schedules your reviews exactly when your brain is about to forget them, optimizing long-term retention.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Absolute Privacy',
+        description:
+          'Your study data, mistakes, and photos never leave your device. We believe educational data is uniquely private.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: 'Frictionless Input',
+        description:
+          'Stop typing out math equations or long text. Just snap a photo, crop the mistake, and let the on-device AI do the heavy lifting.',
+        icon: 'tabler:bolt',
+      },
+    ]}
+  />
+
+  <!-- Waitlist CTA Widget (Custom) *************** -->
+
+  <div id="waitlist" class="max-w-3xl mx-auto text-center p-6 mb-20 mt-10 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow-sm">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-4">
+      Ready to study smarter?
+    </h2>
+    <p class="text-lg leading-8 text-gray-600 dark:text-gray-400 mb-8">
+      SnapDrill is currently in closed beta. Join the waitlist to get early access when we launch on the App Store.
+    </p>
+    <form action="https://formspree.io/f/replace_with_your_formspree_id" method="POST" class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Enter your email"
+        class="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 dark:text-white dark:bg-slate-800 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 focus:ring-2 focus:ring-inset focus:ring-accent sm:text-sm sm:leading-6"
+      />
+      <button
+        type="submit"
+        class="flex-none rounded-md bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      >
+        Join Waitlist
+      </button>
+    </form>
+    <p class="mt-4 text-xs text-gray-500 dark:text-gray-400">
+      We hate spam as much as you do. One email, only when we launch.
+    </p>
+  </div>
+
+</Layout>

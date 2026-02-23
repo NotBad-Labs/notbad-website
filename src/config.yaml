@@ -16,15 +16,15 @@ metadata:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: NotBad Labs
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/notbad_hero.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: '@NotBadLabs'
+    site: '@NotBadLabs'
     cardType: summary_large_image
 
 i18n:

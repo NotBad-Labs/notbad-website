@@ -4,6 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
+import ContactForm from '~/components/widgets/ContactForm.astro';
 
 const metadata = {
   title: 'NotBad Labs | AI-Native Software Studio',
@@ -21,7 +22,7 @@ const metadata = {
         text: 'Explore Our Work',
         href: '#works',
       },
-      { text: 'Get in Touch', href: 'mailto:hello@notbadhq.com' },
+      { text: 'Get in Touch', href: '#contact' },
     ]}
     image={{ src: '~/assets/images/notbad_hero.png', alt: 'NotBad Labs Neural Engine' }}
   >
@@ -108,5 +109,9 @@ const metadata = {
       },
     ]}
   />
+
+  <!-- Contact Form Widget ******************** -->
+
+  <ContactForm />
 
 </Layout>

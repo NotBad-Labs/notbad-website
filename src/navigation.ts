@@ -16,11 +16,11 @@ export const headerData = {
     },
     {
       text: 'Contact',
-      href: 'mailto:hello@notbadhq.com',
+      href: getPermalink('/#contact'),
     },
   ],
   actions: [
-    { text: 'Start building', href: 'mailto:hello@notbadhq.com', variant: 'primary' }
+    { text: 'Start building', href: getPermalink('/#contact'), variant: 'primary' }
   ],
 };
 
@@ -29,14 +29,14 @@ export const footerData = {
     {
       title: 'Products',
       links: [
-        { text: 'SnapDrill', href: getPermalink('/#works') },
+        { text: 'SnapDrill', href: getPermalink('/snapdrill') },
       ],
     },
     {
       title: 'Company',
       links: [
         { text: 'About Us', href: getPermalink('/#about') },
-        { text: 'Contact', href: 'mailto:hello@notbadhq.com' },
+        { text: 'Contact', href: getPermalink('/#contact') },
       ],
     },
     {
