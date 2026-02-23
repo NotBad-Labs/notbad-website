@@ -53,6 +53,6 @@ export const footerData = {
   ],
   socialLinks: [],
   footNote: `
-    © ${new Date().getFullYear()} NotBad Labs L.L.C. · Sheridan, Wyoming, USA
+    © ${new Date().getFullYear()} NotBad Labs L.L.C. · Wyoming, USA
   `,
 };

@@ -3,8 +3,6 @@ title: 'Terms of Service'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-# Terms of Service
-
 **Effective Date: February 23, 2026**
 
 ## 1. Acceptance of Terms
@@ -55,6 +53,5 @@ We reserve the right, at our sole discretion, to modify or replace these Terms a
 For any questions or complaints regarding the Services or these Terms, please contact us at:
 
 **NotBad Labs L.L.C.**
-30 N Gould St Ste 44347
-Sheridan, WY 82801, USA
+Wyoming, USA
 Email: <legal@notbadhq.com>

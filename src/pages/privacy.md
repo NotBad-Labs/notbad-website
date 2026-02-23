@@ -3,8 +3,6 @@ title: 'Privacy Policy'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-# Privacy Policy
-
 **Effective Date: February 23, 2026**
 
 ## 1. Introduction
@@ -57,6 +55,5 @@ We may routinely update this Privacy Policy to reflect changes in legal or regul
 If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact our Data Protection Officer:
 
 **NotBad Labs L.L.C.**
-30 N Gould St Ste 44347
-Sheridan, WY 82801, USA
+Wyoming, USA
 Email: <privacy@notbadhq.com>
