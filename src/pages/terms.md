@@ -5,30 +5,56 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 # Terms of Service
 
-*Last updated: February 23, 2026*
+**Effective Date: February 23, 2026**
 
-## 1. Introduction
+## 1. Acceptance of Terms
 
-Welcome to NotBad Labs. This Terms of Service ("Terms") agreement governs your access to and use of NotBad Labs' applications, websites, and services. By accessing or using our services, you agree to be bound by these Terms.
+Welcome to NotBad Labs L.L.C. ("NotBad Labs," "we," "us," or "our"). These Terms of Service ("Terms") govern your access to and use of our applications, websites, and services, including the **SnapDrill** application (collectively, the "Services").
 
-## 2. Services Subject to Terms
+By downloading, installing, accessing, or using the Services, you accept and agree to be bound by these Terms. If you do not agree to these Terms, you must not access or use the Services.
 
-These terms apply specifically to products developed by NotBad Labs L.L.C. (Wyoming, USA), including but not limited to **SnapDrill**.
+## 2. Description of Services
 
-## 3. Local Processing & Privacy
+NotBad Labs provides an on-device, AI-powered study companion through the SnapDrill application. Our software analyzes images using local device hardware and utilizes intelligent algorithms to organize educational materials for optimized review (Spaced Repetition). We do not provide educational accreditation or guarantees of academic performance.
 
-Products like SnapDrill are designed with an "On-Device First" architecture. We process images (such as homework photos) locally on your Apple device using CoreML and Vision frameworks. We do not transmit your user-generated photos to our servers for processing.
+## 3. Intellectual Property Rights
 
-## 4. iCloud Synchronization
+Unless otherwise indicated, the Services—including all source code, databases, functionality, software architecture, website designs, audio, video, text, photographs, and graphics (collectively, the "Content") and the trademarks, service marks, and logos contained therein (the "Marks")—are owned or controlled by NotBad Labs L.L.C.
 
-If you enable Apple iCloud integration for our apps, your data is synchronized securely through Apple's infrastructure. We do not have access to your personal iCloud data.
+You are granted a limited, non-exclusive, non-transferable, and revocable license to access and use the Services for your personal, non-commercial use.
 
-## 5. Intellectual Property
+## 4. User Conduct and Restrictions
 
-All intellectual property rights in the services, including software architecture, UI design, and branding, are owned by NotBad Labs.
+You agree not to access or use the Services for any purpose other than that for which we make the Services available. As a user of the Services, you agree not to:
 
-## 6. Contact Information
+* Systematically retrieve data or other content from the Services to create or compile a collection, compilation, database, or directory without written permission from us.
+* Circumvent, disable, or otherwise interfere with security-related features of the Services.
+* **Reverse engineer, decompile, disassemble, or attempt to derive the source code of the SnapDrill application, its underlying AI models, or any affiliated software architecture.**
+* Use the Services to violate any applicable laws or regulations.
 
-If you have questions about these Terms, contact us:
-**Email:** <legal@notbadhq.com>
-**Address:** 30 N Gould St Ste 44347, Sheridan, WY 82801
+## 5. Disclaimer of Warranties
+
+THE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. NOTBAD LABS EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+We make no warranty that (a) the Services will meet your requirements; (b) the Services will be uninterrupted, timely, secure, or error-free; or (c) the results that may be obtained from the use of the Services will be accurate or reliable.
+
+## 6. Limitation of Liability
+
+IN NO EVENT WILL NOTBAD LABS L.L.C., OR ITS DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES, EVEN IF NOTBAD LABS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+## 7. Governing Law and Dispute Resolution
+
+These Terms and your use of the Services are governed by and construed in accordance with the laws of the State of Wyoming, USA, strictly disregarding its conflict of law principles. Any legal action of whatever nature brought by either you or us shall be commenced or prosecuted in the state and federal courts located in Wyoming, and the parties hereby consent to, and waive all defenses of lack of personal jurisdiction and forum non conveniens with respect to venue and jurisdiction in such courts.
+
+## 8. Modifications to Terms
+
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will indicate at the top of this page the date these terms were last revised. Your continued use of the Services following the posting of any changes to the Terms constitutes acceptance of those changes.
+
+## 9. Contact Us
+
+For any questions or complaints regarding the Services or these Terms, please contact us at:
+
+**NotBad Labs L.L.C.**
+30 N Gould St Ste 44347
+Sheridan, WY 82801, USA
+Email: <legal@notbadhq.com>
