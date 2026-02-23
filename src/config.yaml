@@ -1,17 +1,17 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: NotBad Labs
+  site: 'https://notbadhq.com'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: null
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: NotBad Labs
+    template: '%s — NotBad Labs'
+  description: "A humble name with bold ideas. We harness the power of AI to build thoughtful, beautifully crafted tools that genuinely improve everyday life."
   robots:
     index: true
     follow: true
